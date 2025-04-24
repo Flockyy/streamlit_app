@@ -9,17 +9,6 @@ st.set_page_config(
 st.sidebar.success("Select a demo above.")
 
 st.title("Hello Streamlit-er 👋")
-st.markdown(
-    """ 
-    This is a playground for you to try Streamlit and have fun. 
-
-    **There's :rainbow[so much] you can build!**
-    
-    We prepared a few examples for you to get started. Just 
-    click on the buttons above and discover what you can do 
-    with Streamlit. 
-    """
-)
 
 df = pd.read_csv('app/data/employes_data_test.csv')
 st.dataframe(df)
@@ -34,3 +23,12 @@ st.dataframe(df[df['affiliate'] == affiliate])
 
 if st.button("Send balloons!"):
     st.balloons()
+    
+
+uploaded_files = st.file_uploader(
+    "Choose a CSV file", accept_multiple_files=True
+)
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
