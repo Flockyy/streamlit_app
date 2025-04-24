@@ -26,7 +26,7 @@ if st.button("Send balloons!"):
     st.balloons()
     
 
-uploaded_file = st.file_uploader("Choose a file", type={"csv", "txt"})
+uploaded_file = st.file_uploader("Choose a file", type={"csv", "txt", "json"})
 if uploaded_file is not None:
 
     dataframe = pd.read_csv(uploaded_file)
