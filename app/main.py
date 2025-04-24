@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-from io import StringIO
-from faker import Faker
 
 st.set_page_config(
     page_title="main",
