@@ -12,6 +12,7 @@ st.sidebar.success("Select a demo above.")
 st.title("Hello Streamlit-er 👋")
 
 df = pd.read_csv('app/data/employes_data_test.csv')
+
 st.dataframe(df)
 
 name = st.selectbox("Seach by name", df['name'].unique())
@@ -26,7 +27,7 @@ if st.button("Send balloons!"):
     st.balloons()
     
 uploaded_file = st.file_uploader("Choose a file", type={"csv", "json"})
-st.write(uploaded_file)
+st.write(uploaded_file.value)
 if uploaded_file is not None:
 
     uploaded_df = pd.read_csv(uploaded_file, on_bad_lines='skip')
