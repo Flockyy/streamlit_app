@@ -25,7 +25,6 @@ st.dataframe(df[df['affiliate'] == affiliate])
 if st.button("Send balloons!"):
     st.balloons()
     
-
 uploaded_file = st.file_uploader("Choose a file", type={"csv", "txt", "json"})
 if uploaded_file is not None:
 
