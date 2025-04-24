@@ -28,8 +28,9 @@ if st.button("Send balloons!"):
 
 uploaded_file = st.file_uploader("Choose a file", type={"json"})
 if uploaded_file is not None:
-
-    dataframe = pd.read_json(uploaded_file)
-    st.write(dataframe)
+    json_string = StringIO(uploaded_file.getvalue().decode("utf-8"))
+    json_data = pd.read_json(json_string)
+    json_data = json_data.to_dict(orient='records')
+    st.write(json_data)
 
     
