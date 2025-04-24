@@ -20,7 +20,7 @@ data = [
                 "hourly_rate": np.random.randint(10, 50),
                 "affiliate": fake.company(),
              }
-             for i in range(100000)
+             for i in range(1000)
          ]
 df_fake = pd.DataFrame(data)
 st.dataframe(df_fake)
