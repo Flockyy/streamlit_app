@@ -1,646 +1,90 @@
-{
-    "TechCorp": [
-        {
-            "name": "Helen",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 44,
-            "contract_hours": 37
-        },
-        {
-            "name": "Quincy",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 40
-        },
-        {
-            "name": "Fred",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 33,
-            "contract_hours": 40
-        },
-        {
-            "name": "Steve",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 32,
-            "contract_hours": 40
-        },
-        {
-            "name": "Linda",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 34,
-            "contract_hours": 35
-        },
-        {
-            "name": "Bob",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 35,
-            "contract_hours": 40
-        },
-        {
-            "name": "Steve",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 50,
-            "contract_hours": 37
-        },
-        {
-            "name": "Karen",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 33,
-            "contract_hours": 40
-        },
-        {
-            "name": "Paul",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 30,
-            "contract_hours": 35
-        },
-        {
-            "name": "Bob",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 48,
-            "contract_hours": 35
-        },
-        {
-            "name": "Bob",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 45,
-            "contract_hours": 35
-        },
-        {
-            "name": "Mike",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 33,
-            "contract_hours": 40
-        },
-        {
-            "name": "Mike",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 43,
-            "contract_hours": 40
-        },
-        {
-            "name": "Charlie",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 32,
-            "contract_hours": 37
-        },
-        {
-            "name": "Helen",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 35
-        }
-    ],
-    "DesignWorks": [
-        {
-            "name": "Jack",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 38,
-            "contract_hours": 40
-        },
-        {
-            "name": "Emma",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 34,
-            "contract_hours": 40
-        },
-        {
-            "name": "Ian",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        },
-        {
-            "name": "Tina",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 35
-        },
-        {
-            "name": "Oliver",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 49,
-            "contract_hours": 40
-        },
-        {
-            "name": "Jack",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 33,
-            "contract_hours": 35
-        },
-        {
-            "name": "Oliver",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 45,
-            "contract_hours": 40
-        },
-        {
-            "name": "Rachel",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        },
-        {
-            "name": "Ian",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 43,
-            "contract_hours": 37
-        },
-        {
-            "name": "Jack",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        },
-        {
-            "name": "Rachel",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 32,
-            "contract_hours": 35
-        },
-        {
-            "name": "Helen",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        },
-        {
-            "name": "George",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 30,
-            "contract_hours": 40
-        },
-        {
-            "name": "Rachel",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 35
-        },
-        {
-            "name": "Emma",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 44,
-            "contract_hours": 37
-        },
-        {
-            "name": "Mike",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 32,
-            "contract_hours": 40
-        },
-        {
-            "name": "Ian",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 39,
-            "contract_hours": 35
-        },
-        {
-            "name": "Bob",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 45,
-            "contract_hours": 35
-        }
-    ],
-    "ProjectLead": [
-        {
-            "name": "Fred",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 49,
-            "contract_hours": 40
-        },
-        {
-            "name": "Mike",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 32,
-            "contract_hours": 37
-        },
-        {
-            "name": "Oliver",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 38,
-            "contract_hours": 35
-        },
-        {
-            "name": "Tina",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 37,
-            "contract_hours": 37
-        },
-        {
-            "name": "Linda",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 39,
-            "contract_hours": 37
-        },
-        {
-            "name": "Rachel",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 48,
-            "contract_hours": 35
-        },
-        {
-            "name": "Bob",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 46,
-            "contract_hours": 35
-        },
-        {
-            "name": "Steve",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 44,
-            "contract_hours": 37
-        },
-        {
-            "name": "Jack",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 31,
-            "contract_hours": 37
-        },
-        {
-            "name": "Jack",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 46,
-            "contract_hours": 35
-        },
-        {
-            "name": "Charlie",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 43,
-            "contract_hours": 37
-        },
-        {
-            "name": "Oliver",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 35,
-            "contract_hours": 37
-        },
-        {
-            "name": "Nina",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 45,
-            "contract_hours": 40
-        },
-        {
-            "name": "Steve",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 42,
-            "contract_hours": 37
-        },
-        {
-            "name": "Linda",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 36,
-            "contract_hours": 35
-        },
-        {
-            "name": "Jack",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 46,
-            "contract_hours": 35
-        },
-        {
-            "name": "Charlie",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 40,
-            "contract_hours": 35
-        }
-    ],
-    "DataSolutions": [
-        {
-            "name": "Sarah",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 40,
-            "contract_hours": 40
-        },
-        {
-            "name": "John",
-            "job": "Analyste",
-            "hourly_rate": 42,
-            "weekly_hours_worked": 36,
-            "contract_hours": 40
-        },
-        {
-            "name": "Sophie",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 47,
-            "contract_hours": 37
-        },
-        {
-            "name": "David",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 38,
-            "contract_hours": 40
-        },
-        {
-            "name": "Monica",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 35,
-            "contract_hours": 35
-        },
-        {
-            "name": "Alex",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 43,
-            "contract_hours": 40
-        },
-        {
-            "name": "Emily",
-            "job": "Analyste",
-            "hourly_rate": 42,
-            "weekly_hours_worked": 41,
-            "contract_hours": 35
-        },
-        {
-            "name": "Jason",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 36,
-            "contract_hours": 37
-        },
-        {
-            "name": "Anna",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 45,
-            "contract_hours": 35
-        },
-        {
-            "name": "Tom",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        }
-    ],
-    "InnovateIT": [
-        {
-            "name": "Lucas",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 42,
-            "contract_hours": 40
-        },
-        {
-            "name": "Olivia",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 32,
-            "contract_hours": 35
-        },
-        {
-            "name": "Mark",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 38,
-            "contract_hours": 35
-        },
-        {
-            "name": "Sophia",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 48,
-            "contract_hours": 37
-        },
-        {
-            "name": "Leo",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 37,
-            "contract_hours": 40
-        },
-        {
-            "name": "Eva",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 34,
-            "contract_hours": 35
-        },
-        {
-            "name": "Nina",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 45,
-            "contract_hours": 40
-        },
-        {
-            "name": "Eric",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 46,
-            "contract_hours": 37
-        },
-        {
-            "name": "Liam",
-            "job": "Développeur",
-            "hourly_rate": 35,
-            "weekly_hours_worked": 36,
-            "contract_hours": 40
-        },
-        {
-            "name": "Zoe",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 40
-        }
-    ],
-    "AIProTech": [
-        {
-            "name": "Isabelle",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 37,
-            "contract_hours": 35
-        },
-        {
-            "name": "Alexandre",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 40,
-            "contract_hours": 40
-        },
-        {
-            "name": "Julia",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 45,
-            "contract_hours": 35
-        },
-        {
-            "name": "Samuel",
-            "job": "Analyste",
-            "hourly_rate": 40,
-            "weekly_hours_worked": 36,
-            "contract_hours": 40
-        },
-        {
-            "name": "Lea",
-            "job": "Designer",
-            "hourly_rate": 30,
-            "weekly_hours_worked": 30,
-            "contract_hours": 35
-        },
-        {
-            "name": "Noah",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 44,
-            "contract_hours": 40
-        },
-        {
-            "name": "Ava",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 40
-        },
-        {
-            "name": "Ethan",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 46,
-            "contract_hours": 35
-        },
-        {
-            "name": "Clara",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 36,
-            "contract_hours": 37
-        },
-        {
-            "name": "Max",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 43,
-            "contract_hours": 35
-        }
-    ],
-    "DevInnov": [
-        {
-            "name": "Amelia",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 36,
-            "contract_hours": 37
-        },
-        {
-            "name": "Nathan",
-            "job": "Analyste",
-            "hourly_rate": 42,
-            "weekly_hours_worked": 38,
-            "contract_hours": 40
-        },
-        {
-            "name": "Emma",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 47,
-            "contract_hours": 37
-        },
-        {
-            "name": "Tom",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 40,
-            "contract_hours": 35
-        },
-        {
-            "name": "Sophie",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 43,
-            "contract_hours": 35
-        },
-        {
-            "name": "Charlie",
-            "job": "Développeur",
-            "hourly_rate": 38,
-            "weekly_hours_worked": 41,
-            "contract_hours": 40
-        },
-        {
-            "name": "Grace",
-            "job": "Analyste",
-            "hourly_rate": 42,
-            "weekly_hours_worked": 37,
-            "contract_hours": 40
-        },
-        {
-            "name": "Oliver",
-            "job": "Manager",
-            "hourly_rate": 55,
-            "weekly_hours_worked": 44,
-            "contract_hours": 35
-        },
-        {
-            "name": "Sophia",
-            "job": "Chef de projet",
-            "hourly_rate": 50,
-            "weekly_hours_worked": 35,
-            "contract_hours": 37
-        },
-        {
-            "name": "Lucas",
-            "job": "Testeur",
-            "hourly_rate": 28,
-            "weekly_hours_worked": 48,
-            "contract_hours": 40
-        }
-    ]
-}
+{"affiliate":"TechCorp","name":"Steve","weekly_hours_worked":50,"contract_hours":37,"hourly_rate":50,"week_salary":2825.0,"monthly_salary":11300.0,"job":"Chef de projet","highest_salary":11300.0,"mean_salary":6975.6,"lowest_salary":3600.0}
+{"affiliate":"TechCorp","name":"Bob","weekly_hours_worked":45,"contract_hours":35,"hourly_rate":55,"week_salary":2750.0,"monthly_salary":11000.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Helen","weekly_hours_worked":44,"contract_hours":37,"hourly_rate":50,"week_salary":2375.0,"monthly_salary":9500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Mike","weekly_hours_worked":43,"contract_hours":40,"hourly_rate":50,"week_salary":2225.0,"monthly_salary":8900.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Bob","weekly_hours_worked":48,"contract_hours":35,"hourly_rate":35,"week_salary":1907.5,"monthly_salary":7630.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Fred","weekly_hours_worked":33,"contract_hours":40,"hourly_rate":55,"week_salary":1815.0,"monthly_salary":7260.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Linda","weekly_hours_worked":34,"contract_hours":35,"hourly_rate":50,"week_salary":1700.0,"monthly_salary":6800.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Steve","weekly_hours_worked":32,"contract_hours":40,"hourly_rate":50,"week_salary":1600.0,"monthly_salary":6400.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Charlie","weekly_hours_worked":32,"contract_hours":37,"hourly_rate":50,"week_salary":1600.0,"monthly_salary":6400.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Helen","weekly_hours_worked":48,"contract_hours":35,"hourly_rate":28,"week_salary":1526.0,"monthly_salary":6104.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Quincy","weekly_hours_worked":48,"contract_hours":40,"hourly_rate":28,"week_salary":1456.0,"monthly_salary":5824.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Bob","weekly_hours_worked":35,"contract_hours":40,"hourly_rate":40,"week_salary":1400.0,"monthly_salary":5600.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Karen","weekly_hours_worked":33,"contract_hours":40,"hourly_rate":35,"week_salary":1155.0,"monthly_salary":4620.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Mike","weekly_hours_worked":33,"contract_hours":40,"hourly_rate":28,"week_salary":924.0,"monthly_salary":3696.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"TechCorp","name":"Paul","weekly_hours_worked":30,"contract_hours":35,"hourly_rate":30,"week_salary":900.0,"monthly_salary":3600.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Oliver","weekly_hours_worked":49,"contract_hours":40,"hourly_rate":50,"week_salary":2675.0,"monthly_salary":10700.0,"job":"Chef de projet","highest_salary":10700.0,"mean_salary":6748.1111111111,"lowest_salary":3960.0}
+{"affiliate":"DesignWorks","name":"Oliver","weekly_hours_worked":45,"contract_hours":40,"hourly_rate":55,"week_salary":2612.5,"monthly_salary":10450.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Bob","weekly_hours_worked":45,"contract_hours":35,"hourly_rate":50,"week_salary":2500.0,"monthly_salary":10000.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Emma","weekly_hours_worked":44,"contract_hours":37,"hourly_rate":50,"week_salary":2375.0,"monthly_salary":9500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Ian","weekly_hours_worked":39,"contract_hours":35,"hourly_rate":50,"week_salary":2050.0,"monthly_salary":8200.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Ian","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":50,"week_salary":1900.0,"monthly_salary":7600.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Jack","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":50,"week_salary":1900.0,"monthly_salary":7600.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Mike","weekly_hours_worked":32,"contract_hours":40,"hourly_rate":55,"week_salary":1760.0,"monthly_salary":7040.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Tina","weekly_hours_worked":48,"contract_hours":35,"hourly_rate":28,"week_salary":1526.0,"monthly_salary":6104.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Rachel","weekly_hours_worked":48,"contract_hours":35,"hourly_rate":28,"week_salary":1526.0,"monthly_salary":6104.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Jack","weekly_hours_worked":38,"contract_hours":40,"hourly_rate":40,"week_salary":1520.0,"monthly_salary":6080.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Helen","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":35,"week_salary":1330.0,"monthly_salary":5320.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Ian","weekly_hours_worked":43,"contract_hours":37,"hourly_rate":28,"week_salary":1288.0,"monthly_salary":5152.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Rachel","weekly_hours_worked":32,"contract_hours":35,"hourly_rate":40,"week_salary":1280.0,"monthly_salary":5120.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Rachel","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":28,"week_salary":1064.0,"monthly_salary":4256.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"George","weekly_hours_worked":30,"contract_hours":40,"hourly_rate":35,"week_salary":1050.0,"monthly_salary":4200.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Emma","weekly_hours_worked":34,"contract_hours":40,"hourly_rate":30,"week_salary":1020.0,"monthly_salary":4080.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DesignWorks","name":"Jack","weekly_hours_worked":33,"contract_hours":35,"hourly_rate":30,"week_salary":990.0,"monthly_salary":3960.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Bob","weekly_hours_worked":46,"contract_hours":35,"hourly_rate":55,"week_salary":2832.5,"monthly_salary":11330.0,"job":"Manager","highest_salary":11330.0,"mean_salary":6945.8823529412,"lowest_salary":4480.0}
+{"affiliate":"ProjectLead","name":"Charlie","weekly_hours_worked":43,"contract_hours":37,"hourly_rate":55,"week_salary":2530.0,"monthly_salary":10120.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Steve","weekly_hours_worked":44,"contract_hours":37,"hourly_rate":50,"week_salary":2375.0,"monthly_salary":9500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Charlie","weekly_hours_worked":40,"contract_hours":35,"hourly_rate":50,"week_salary":2125.0,"monthly_salary":8500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Tina","weekly_hours_worked":37,"contract_hours":37,"hourly_rate":55,"week_salary":2035.0,"monthly_salary":8140.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Oliver","weekly_hours_worked":38,"contract_hours":35,"hourly_rate":50,"week_salary":1975.0,"monthly_salary":7900.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Nina","weekly_hours_worked":45,"contract_hours":40,"hourly_rate":40,"week_salary":1900.0,"monthly_salary":7600.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Rachel","weekly_hours_worked":48,"contract_hours":35,"hourly_rate":30,"week_salary":1635.0,"monthly_salary":6540.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Jack","weekly_hours_worked":31,"contract_hours":37,"hourly_rate":50,"week_salary":1550.0,"monthly_salary":6200.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Jack","weekly_hours_worked":46,"contract_hours":35,"hourly_rate":30,"week_salary":1545.0,"monthly_salary":6180.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Fred","weekly_hours_worked":49,"contract_hours":40,"hourly_rate":28,"week_salary":1498.0,"monthly_salary":5992.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Jack","weekly_hours_worked":46,"contract_hours":35,"hourly_rate":28,"week_salary":1442.0,"monthly_salary":5768.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Steve","weekly_hours_worked":42,"contract_hours":37,"hourly_rate":30,"week_salary":1335.0,"monthly_salary":5340.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Linda","weekly_hours_worked":36,"contract_hours":35,"hourly_rate":35,"week_salary":1277.5,"monthly_salary":5110.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Oliver","weekly_hours_worked":35,"contract_hours":37,"hourly_rate":35,"week_salary":1225.0,"monthly_salary":4900.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Mike","weekly_hours_worked":32,"contract_hours":37,"hourly_rate":35,"week_salary":1120.0,"monthly_salary":4480.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"ProjectLead","name":"Linda","weekly_hours_worked":39,"contract_hours":37,"hourly_rate":28,"week_salary":1120.0,"monthly_salary":4480.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Sophie","weekly_hours_worked":47,"contract_hours":37,"hourly_rate":55,"week_salary":2860.0,"monthly_salary":11440.0,"job":"Manager","highest_salary":11440.0,"mean_salary":7200.4,"lowest_salary":3920.0}
+{"affiliate":"DataSolutions","name":"Anna","weekly_hours_worked":45,"contract_hours":35,"hourly_rate":55,"week_salary":2750.0,"monthly_salary":11000.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"David","weekly_hours_worked":38,"contract_hours":40,"hourly_rate":50,"week_salary":1900.0,"monthly_salary":7600.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Emily","weekly_hours_worked":41,"contract_hours":35,"hourly_rate":42,"week_salary":1848.0,"monthly_salary":7392.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Jason","weekly_hours_worked":36,"contract_hours":37,"hourly_rate":50,"week_salary":1800.0,"monthly_salary":7200.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Alex","weekly_hours_worked":43,"contract_hours":40,"hourly_rate":38,"week_salary":1691.0,"monthly_salary":6764.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Sarah","weekly_hours_worked":40,"contract_hours":40,"hourly_rate":38,"week_salary":1520.0,"monthly_salary":6080.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"John","weekly_hours_worked":36,"contract_hours":40,"hourly_rate":42,"week_salary":1512.0,"monthly_salary":6048.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Tom","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":30,"week_salary":1140.0,"monthly_salary":4560.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DataSolutions","name":"Monica","weekly_hours_worked":35,"contract_hours":35,"hourly_rate":28,"week_salary":980.0,"monthly_salary":3920.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Sophia","weekly_hours_worked":48,"contract_hours":37,"hourly_rate":55,"week_salary":2942.5,"monthly_salary":11770.0,"job":"Manager","highest_salary":11770.0,"mean_salary":7050.8,"lowest_salary":4080.0}
+{"affiliate":"InnovateIT","name":"Eric","weekly_hours_worked":46,"contract_hours":37,"hourly_rate":55,"week_salary":2777.5,"monthly_salary":11110.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Nina","weekly_hours_worked":45,"contract_hours":40,"hourly_rate":50,"week_salary":2375.0,"monthly_salary":9500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Mark","weekly_hours_worked":38,"contract_hours":35,"hourly_rate":50,"week_salary":1975.0,"monthly_salary":7900.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Lucas","weekly_hours_worked":42,"contract_hours":40,"hourly_rate":35,"week_salary":1505.0,"monthly_salary":6020.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Zoe","weekly_hours_worked":48,"contract_hours":40,"hourly_rate":28,"week_salary":1456.0,"monthly_salary":5824.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Olivia","weekly_hours_worked":32,"contract_hours":35,"hourly_rate":40,"week_salary":1280.0,"monthly_salary":5120.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Liam","weekly_hours_worked":36,"contract_hours":40,"hourly_rate":35,"week_salary":1260.0,"monthly_salary":5040.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Leo","weekly_hours_worked":37,"contract_hours":40,"hourly_rate":28,"week_salary":1036.0,"monthly_salary":4144.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"InnovateIT","name":"Eva","weekly_hours_worked":34,"contract_hours":35,"hourly_rate":30,"week_salary":1020.0,"monthly_salary":4080.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Ethan","weekly_hours_worked":46,"contract_hours":35,"hourly_rate":55,"week_salary":2832.5,"monthly_salary":11330.0,"job":"Manager","highest_salary":11330.0,"mean_salary":7065.0,"lowest_salary":3600.0}
+{"affiliate":"AIProTech","name":"Julia","weekly_hours_worked":45,"contract_hours":35,"hourly_rate":55,"week_salary":2750.0,"monthly_salary":11000.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Isabelle","weekly_hours_worked":37,"contract_hours":35,"hourly_rate":50,"week_salary":1900.0,"monthly_salary":7600.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Clara","weekly_hours_worked":36,"contract_hours":37,"hourly_rate":50,"week_salary":1800.0,"monthly_salary":7200.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Noah","weekly_hours_worked":44,"contract_hours":40,"hourly_rate":38,"week_salary":1748.0,"monthly_salary":6992.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Alexandre","weekly_hours_worked":40,"contract_hours":40,"hourly_rate":38,"week_salary":1520.0,"monthly_salary":6080.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Ava","weekly_hours_worked":48,"contract_hours":40,"hourly_rate":28,"week_salary":1456.0,"monthly_salary":5824.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Samuel","weekly_hours_worked":36,"contract_hours":40,"hourly_rate":40,"week_salary":1440.0,"monthly_salary":5760.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Max","weekly_hours_worked":43,"contract_hours":35,"hourly_rate":28,"week_salary":1316.0,"monthly_salary":5264.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"AIProTech","name":"Lea","weekly_hours_worked":30,"contract_hours":35,"hourly_rate":30,"week_salary":900.0,"monthly_salary":3600.0,"job":"Designer","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Emma","weekly_hours_worked":47,"contract_hours":37,"hourly_rate":55,"week_salary":2860.0,"monthly_salary":11440.0,"job":"Manager","highest_salary":11440.0,"mean_salary":7307.8,"lowest_salary":5264.0}
+{"affiliate":"DevInnov","name":"Oliver","weekly_hours_worked":44,"contract_hours":35,"hourly_rate":55,"week_salary":2667.5,"monthly_salary":10670.0,"job":"Manager","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Tom","weekly_hours_worked":40,"contract_hours":35,"hourly_rate":50,"week_salary":2125.0,"monthly_salary":8500.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Sophia","weekly_hours_worked":35,"contract_hours":37,"hourly_rate":50,"week_salary":1750.0,"monthly_salary":7000.0,"job":"Chef de projet","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Nathan","weekly_hours_worked":38,"contract_hours":40,"hourly_rate":42,"week_salary":1596.0,"monthly_salary":6384.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Charlie","weekly_hours_worked":41,"contract_hours":40,"hourly_rate":38,"week_salary":1577.0,"monthly_salary":6308.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Grace","weekly_hours_worked":37,"contract_hours":40,"hourly_rate":42,"week_salary":1554.0,"monthly_salary":6216.0,"job":"Analyste","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Lucas","weekly_hours_worked":48,"contract_hours":40,"hourly_rate":28,"week_salary":1456.0,"monthly_salary":5824.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Amelia","weekly_hours_worked":36,"contract_hours":37,"hourly_rate":38,"week_salary":1368.0,"monthly_salary":5472.0,"job":"D\u00e9veloppeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}
+{"affiliate":"DevInnov","name":"Sophie","weekly_hours_worked":43,"contract_hours":35,"hourly_rate":28,"week_salary":1316.0,"monthly_salary":5264.0,"job":"Testeur","highest_salary":null,"mean_salary":null,"lowest_salary":null}

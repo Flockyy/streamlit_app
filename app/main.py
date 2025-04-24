@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import StringIO
+from faker import Faker
 
 st.set_page_config(
     page_title="main",
@@ -35,10 +36,10 @@ def extract(file_to_extract):
         extracted_data = pd.read_csv(file_to_extract)
 
     elif file_to_extract.name.split(".")[-1] == 'json':
-         extracted_data = pd.read_json(file_to_extract, lines=True)
+        extracted_data = pd.read_json(file_to_extract, lines=True)
 
     elif file_to_extract.name.split(".")[-1] == 'xml':
-         extracted_data = pd.read_xml(file_to_extract)
+        extracted_data = pd.read_xml(file_to_extract)
          
     return extracted_data
 
