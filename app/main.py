@@ -26,11 +26,53 @@ st.dataframe(df[df['affiliate'] == affiliate])
 if st.button("Send balloons!"):
     st.balloons()
 
-uploaded_file = st.file_uploader("Choose a file", type={"json"})
-if uploaded_file is not None:
-    json_string = StringIO(uploaded_file.getvalue().decode("utf-8"))
-    json_data = pd.read_json(json_string)
-    json_data = json_data.to_dict(orient='records')
-    st.write(json_data)
+uploaded_files = st.file_uploader("Choose a file", accept_multiple_files=True)
+
+# let's create a function to check the file types and read them accordingly.
+
+def extract(file_to_extract):
+    if file_to_extract.name.split(".")[-1] == "csv": 
+        extracted_data = pd.read_csv(file_to_extract)
+
+    elif file_to_extract.name.split(".")[-1] == 'json':
+         extracted_data = pd.read_json(file_to_extract, lines=True)
+
+    elif file_to_extract.name.split(".")[-1] == 'xml':
+         extracted_data = pd.read_xml(file_to_extract)
+         
+    return extracted_data
+
+# create an empty list which will be used to merge the files.
+
+dataframes = []
+    
+if uploaded_files:
+    for file in uploaded_files:
+        file.seek(0)
+        df = extract(file)
+        dataframes.append(df)
+
+    if len(dataframes) >= 1:
+        merged_df = pd.concat(dataframes, ignore_index=True, join='outer')
+
+    remove_duplicates = st.selectbox("Remove duplicate values ?", ["No", "Yes"])
+    remove_nulls = st.selectbox("Remove null values in the dataset ?", ["Yes", "No"])
+
+    if remove_duplicates == "Yes":
+        merged_df.drop_duplicates(inplace=True)
+
+    if remove_nulls == "Yes":
+        merged_df.dropna(how="all", inplace=True)
 
     
+    show_result = st.checkbox("Show Result", value=True)
+
+    if show_result:
+        st.write(merged_df)
+
+    csv = merged_df.to_csv().encode("utf-8")
+
+    st.download_button(label="Download cleaned data as csv",
+                       data=csv,
+                       file_name="cleaned_data.csv",
+                       mime="text/csv")
