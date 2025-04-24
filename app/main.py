@@ -21,7 +21,7 @@ st.markdown(
     """
 )
 
-df = pd.read_csv('/Users/fabgrall/Documents/data_engineer/employes_data_test.csv')
+df = pd.read_csv('app/data/employes_data_test.csv')
 st.dataframe(df)
 
 name = st.selectbox("Seach by name", df['name'].unique())

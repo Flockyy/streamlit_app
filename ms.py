@@ -204,6 +204,6 @@ def export_to_csv(filename: str) -> None:
 
     
 
-show_stats('DevInnov')
+show_stats()
 data = prepare_csv()
 export_to_csv('employes_data_test.csv')
