@@ -8,7 +8,7 @@ st.set_page_config(
     page_icon="📊",
 )
 
-df = pd.read_csv('/Users/fabgrall/Documents/data_engineer/employes_data_test.csv')
+df = pd.read_csv('app/data/employes_data_test.csv')
 
 st.title("Plots")
 
