@@ -41,7 +41,7 @@ if uploaded_file is not None:
     st.write(string_data)
 
     # Can be used wherever a "file-like" object is accepted:
-    dataframe = pd.DataFrame(stringio)
+    dataframe = pd.DataFrame(uploaded_file)
     st.write(dataframe)
 
     
