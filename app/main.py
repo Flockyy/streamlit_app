@@ -25,9 +25,10 @@ st.dataframe(df[df['affiliate'] == affiliate])
 if st.button("Send balloons!"):
     st.balloons()
     
-uploaded_file = st.file_uploader("Choose a file", type={"csv", "txt", "json"})
+uploaded_file = st.file_uploader("Choose a file", type={"csv", "json"})
 if uploaded_file is not None:
 
-    dataframe = pd.read_csv(uploaded_file)
-    st.dataframe(dataframe)
+    uploaded_df = pd.read_csv(uploaded_file, on_bad_lines='skip')
+    st.dataframe(uploaded_df)
+
     
