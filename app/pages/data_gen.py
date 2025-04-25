@@ -38,7 +38,9 @@ with st.status("Generating data..."):
     
     df_fake = pd.DataFrame(data)
     st.dataframe(df_fake)
-    
+
+st.button("Generate new data")
+
         
 name = st.selectbox("Seach by name", df_fake['name'].unique())
 
