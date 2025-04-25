@@ -68,3 +68,12 @@ with st.status("Generating data..."):
     
     df_fake = pd.DataFrame(data)
     st.dataframe(df_fake)
+    
+    
+name = st.selectbox("Seach by name", df_fake['name'].unique())
+
+st.dataframe(df_fake[df_fake['name'] == name])
+
+affiliate = st.selectbox("Seach by affilitate", df_fake['affiliate'].unique())
+
+st.dataframe(df_fake[df_fake['affiliate'] == affiliate])
