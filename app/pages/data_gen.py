@@ -33,7 +33,7 @@ with st.status("Generating data..."):
 with st.status("Generating data..."):
     data = [
         { 
-        "nom": fake.first_name(),
+        "name": fake.first_name(),
         "last_name":  fake.last_name(),
         "job": fake.job(),
         "monthly_salary": np.random.randint(3000, 13000),
@@ -55,7 +55,7 @@ with st.status("Generating data..."):
         for i in range(np.random.randint(15, 50)):
             data.append(
                 { 
-                "nom": fake.first_name(),
+                "name": fake.first_name(),
                 "last_name":  fake.last_name(),
                 "job": fake.job(),
                 "monthly_salary": np.random.randint(3000, 13000),
