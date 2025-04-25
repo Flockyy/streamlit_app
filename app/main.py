@@ -6,7 +6,7 @@ st.set_page_config(
     page_title="main",
     page_icon="👋",
 )
-st.set_page_config(layout="wide")
+
 
 st.sidebar.success("Select a demo above.")
 
