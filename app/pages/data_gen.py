@@ -10,10 +10,6 @@ st.set_page_config(
 
 fake = faker.Faker()
 
-st.set_page_config(
-    page_title="Plots",
-    page_icon="📊",
-)
 
 data = [
     { 
