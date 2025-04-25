@@ -165,6 +165,31 @@ def get_global_stats() -> dict:
         'highest_salary': highest_sal
     }
 
+def get_stats(affiliate: str = None) -> dict:
+    """
+    Get statistics for all affiliates or a specific affiliate.
+
+    Args:
+        affiliate (str, optional): Affiliate name. Defaults to None.
+
+    Returns:
+        dict: statistics including mean, lowest, and highest salary
+    """
+    
+    if affiliate:
+        data = get_item_by_affiliate(affiliate)
+    else:
+        data = get_all_items()
+        
+    mean_sal = mean_salary(data)
+    lowest_sal = lowest_salary(data)
+    highest_sal = highest_salary(data)
+    
+    return {
+        'mean_salary': mean_sal,
+        'lowest_salary': lowest_sal,
+        'highest_salary': highest_sal
+    }
 
 def get_stats_by_affiliate(affiliate: str) -> dict:
     """
@@ -189,7 +214,7 @@ def get_stats_by_affiliate(affiliate: str) -> dict:
     }
 
 
-def show_stats(affiliate=None) -> None:
+def show_stats(affiliate: str = None) -> None:
     """
     Show statistics for all affiliates or a specific affiliate.
 
