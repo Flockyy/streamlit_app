@@ -53,10 +53,10 @@ with st.status("Generating data..."):
     st.dataframe(df_fake)
     
         
-    name = st.selectbox("Seach by name", df_fake['name'].unique())
+name = st.selectbox("Seach by name", df_fake['name'].unique())
 
-    st.dataframe(df_fake[df_fake['name'] == name])
+st.dataframe(df_fake[df_fake['name'] == name])
 
-    affiliate = st.selectbox("Seach by affilitate", df_fake['affiliate'].unique())
+affiliate = st.selectbox("Seach by affilitate", df_fake['affiliate'].unique())
 
-    st.dataframe(df_fake[df_fake['affiliate'] == affiliate])
+st.dataframe(df_fake[df_fake['affiliate'] == affiliate])
