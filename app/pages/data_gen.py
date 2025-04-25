@@ -4,8 +4,8 @@ import numpy as np
 import faker
 
 st.set_page_config(
-    page_title="main",
-    page_icon="👋",
+    page_title="Data_gen",
+    page_icon="📊",
 )
 
 fake = faker.Faker()
