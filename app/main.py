@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+
 st.set_page_config(
     page_title="main",
     page_icon="👋",
@@ -27,7 +28,6 @@ if st.button("Send balloons!"):
 
 uploaded_files = st.file_uploader("Choose a file", accept_multiple_files=True)
 
-# let's create a function to check the file types and read them accordingly.
 
 def extract(file_to_extract):
     if file_to_extract.name.split(".")[-1] == "csv": 
@@ -41,7 +41,6 @@ def extract(file_to_extract):
          
     return extracted_data
 
-# create an empty list which will be used to merge the files.
 
 dataframes = []
     
