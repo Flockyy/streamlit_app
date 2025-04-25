@@ -14,19 +14,6 @@ st.title("Data Generator")
 
 
 with st.status("Generating data..."):
-    data = [
-        { 
-        "name": fake.first_name(),
-        "last_name":  fake.last_name(),
-        "job": fake.job(),
-        "monthly_salary": np.random.randint(3000, 13000),
-        "weekly_hours_worked": np.random.randint(20, 50),
-        "contract_hours": np.random.randint(20, 50),
-        "hourly_rate": np.random.randint(10, 50),
-        "affiliate": fake.company(),
-    }
-        for i in range(1000)
-    ]
     
     # Create 20 different companies
     companies = []  
