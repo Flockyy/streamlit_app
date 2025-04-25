@@ -12,8 +12,7 @@ fake = faker.Faker()
 
 st.title("Data Generator")
 
-
-with st.status("Downloading data..."):
+with st.status("Generating data..."):
     data = [
         { 
         "nom": fake.first_name(),
@@ -28,5 +27,44 @@ with st.status("Downloading data..."):
         for i in range(1000)
     ]
 
+    df_fake = pd.DataFrame(data)
+    st.dataframe(df_fake)
+    
+with st.status("Generating data..."):
+    data = [
+        { 
+        "nom": fake.first_name(),
+        "last_name":  fake.last_name(),
+        "job": fake.job(),
+        "monthly_salary": np.random.randint(3000, 13000),
+        "weekly_hours_worked": np.random.randint(20, 50),
+        "contract_hours": np.random.randint(20, 50),
+        "hourly_rate": np.random.randint(10, 50),
+        "affiliate": fake.company(),
+    }
+        for i in range(1000)
+    ]
+    
+    # Create 20 different companies
+    companies = []  
+    for i in range(20):
+        companies.append(fake.company())
+    # Add 15 to 20 employees to each company
+
+    for company in companies:
+        for i in range(np.random.randint(15, 50)):
+            data.append(
+                { 
+                "nom": fake.first_name(),
+                "last_name":  fake.last_name(),
+                "job": fake.job(),
+                "monthly_salary": np.random.randint(3000, 13000),
+                "weekly_hours_worked": np.random.randint(20, 50),
+                "contract_hours": np.random.randint(20, 50),
+                "hourly_rate": np.random.randint(10, 50),
+                "affiliate": company,
+            }
+        )
+    
     df_fake = pd.DataFrame(data)
     st.dataframe(df_fake)
