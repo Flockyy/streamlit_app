@@ -21,6 +21,7 @@ def import_data() -> dict:
             ...
         ]
     }
+    
 
     Args:
         None
@@ -36,6 +37,14 @@ def import_data() -> dict:
 def get_all_items() -> list:
     """
     Get all items from the JSON file and pre-compute their monthly salary.
+    This function assumes that the data is a list of dictionaries, where each dictionary
+    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
+    The function calculates the weekly salary based on the hours worked and the contract hours,
+    and then computes the monthly salary by multiplying the weekly salary by 4.
+    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
+    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
+    The function returns the modified data with the added keys.
+    This function reads a JSON file containing employee data and returns the data as a list.
 
     Args:
         None
