@@ -362,7 +362,6 @@ def export_to_csv(filename: str) -> None:
                 writer.writerow(employee)
     return
 
-    
 
 show_stats()
 data = prepare_csv()

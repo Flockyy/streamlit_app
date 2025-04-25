@@ -38,9 +38,6 @@ with st.status("Generating data..."):
     
     df_fake = pd.DataFrame(data)
     st.dataframe(df_fake)
-
-if 'df_fake' not in st.session_state:
-    st.session_state.df_fake = df_fake
     
 st.button("Generate new data")
         
