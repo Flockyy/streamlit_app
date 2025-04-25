@@ -5,23 +5,6 @@ from tabulate import tabulate
 def import_data() -> dict:
     """
     Import raw data from a JSON file.
-    This function reads a JSON file containing employee data and returns the data as a dictionary.
-    The JSON file is expected to be in the following format:
-    {
-        "affiliate1": [
-            {
-                "name": "John Doe",
-                "weekly_hours_worked": 40,
-                "contract_hours": 35,
-                "hourly_rate": 20
-            },
-            ...
-        ],
-        "affiliate2": [
-            ...
-        ]
-    }
-    
 
     Args:
         None
@@ -37,14 +20,6 @@ def import_data() -> dict:
 def get_all_items() -> list:
     """
     Get all items from the JSON file and pre-compute their monthly salary.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
-    The function calculates the weekly salary based on the hours worked and the contract hours,
-    and then computes the monthly salary by multiplying the weekly salary by 4.
-    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
-    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
-    The function returns the modified data with the added keys.
-    This function reads a JSON file containing employee data and returns the data as a list.
 
     Args:
         None
@@ -68,13 +43,6 @@ def get_all_items() -> list:
 def get_item_by_affiliate(affiliate: str) -> list:
     """
     Get items by affiliate from the JSON file and pre-compute their monthly salary.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
-    The function calculates the weekly salary based on the hours worked and the contract hours,
-    and then computes the monthly salary by multiplying the weekly salary by 4.
-    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
-    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
-    The function returns the modified data with the added keys.
 
     Args:
         affiliate (str): Affiliate name
@@ -93,13 +61,6 @@ def get_item_by_affiliate(affiliate: str) -> list:
 def compute_monthly_salary(data: list) -> list:
     """
     Compute the monthly salary for each employee in the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
-    The function calculates the weekly salary based on the hours worked and the contract hours,
-    and then computes the monthly salary by multiplying the weekly salary by 4.
-    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
-    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
-    The function returns the modified data with the added keys.
 
     Args:
         data (list): List of employees
@@ -123,11 +84,6 @@ def compute_monthly_salary(data: list) -> list:
 def mean_salary(data: list) -> float:
     """
     Compute the mean salary from the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the mean salary by summing all the monthly salaries
-    and dividing by the number of employees.
-    The function returns the mean salary as a float.
 
     Args:
         data (_type_): List of employees
@@ -150,11 +106,6 @@ def mean_salary(data: list) -> float:
 def lowest_salary(data: list) -> float:
     """
     Compute the lowest salary from the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the lowest salary by iterating through the data
-    and comparing each employee's monthly salary to the current lowest salary.
-    The function returns the lowest salary as a float.
 
     Args:
         data (list): list of employees
@@ -175,12 +126,6 @@ def lowest_salary(data: list) -> float:
 def highest_salary(data: list) -> float:
     """
     Compute the highest salary from the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the highest salary by iterating through the data
-    and comparing each employee's monthly salary to the current highest salary.
-    The function returns the highest salary as a float.
-    
 
     Args:
         data (list): list of employees
@@ -202,10 +147,7 @@ def highest_salary(data: list) -> float:
 def get_global_stats() -> dict:
     """
     Get global statistics from the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the mean, lowest, and highest salary by calling
-    the respective functions and returns them in a dictionary.
+    
     Args:
         None
     Returns:
@@ -227,10 +169,6 @@ def get_global_stats() -> dict:
 def get_stats_by_affiliate(affiliate: str) -> dict:
     """
     Get statistics by affiliate from the data.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the mean, lowest, and highest salary by calling
-    the respective functions and returns them in a dictionary.
 
     Args:
         affiliate (str): affiliate name
@@ -254,13 +192,6 @@ def get_stats_by_affiliate(affiliate: str) -> dict:
 def show_stats(affiliate=None) -> None:
     """
     Show statistics for all affiliates or a specific affiliate.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the key 'monthly_salary'.
-    The function calculates the mean, lowest, and highest salary by calling
-    the respective functions and prints them in a formatted table.
-    If an affiliate is provided, it shows the statistics for that affiliate.
-    If no affiliate is provided, it shows the statistics for all affiliates.
-    The function returns None. 
 
     Args:
         affiliate (str, optional): Affiliate None. Defaults to None.
@@ -293,15 +224,7 @@ def show_stats(affiliate=None) -> None:
 def prepare_csv() -> dict:
     """
     Prepare data for CSV export.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
-    The function calculates the weekly salary based on the hours worked and the contract hours,
-    and then computes the monthly salary by multiplying the weekly salary by 4.
-    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
-    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
-    The function sorts the data by monthly salary in descending order and adds the mean, lowest, and highest salary
-    to the first employee's dictionary.
-    The function returns the modified data as a dictionary.
+
     Args:
         None
 
@@ -331,17 +254,6 @@ def prepare_csv() -> dict:
 def export_to_csv(filename: str) -> None:
     """
     Export data to a CSV file.
-    This function assumes that the data is a list of dictionaries, where each dictionary
-    represents an employee with the keys 'weekly_hours_worked', 'contract_hours', and 'hourly_rate'.
-    The function calculates the weekly salary based on the hours worked and the contract hours,
-    and then computes the monthly salary by multiplying the weekly salary by 4.
-    If the employee worked more hours than their contract hours, the extra hours are paid at 1.5 times the hourly rate.
-    The function adds the 'week_salary' and 'monthly_salary' keys to each employee's dictionary.
-    The function sorts the data by monthly salary in descending order and adds the mean, lowest, and highest salary
-    to the first employee's dictionary.
-    The function writes the data to a CSV file with the specified filename.
-    The CSV file will have the following columns: 'affiliate', 'name', 'weekly_hours_worked', 'contract_hours', 'hourly_rate', 'week_salary', 'monthly_salary', 'job', 'highest_salary', 'mean_salary', and 'lowest_salary'.
-    The function returns None.
 
     Args:
         filename (str): Name of the CSV file to export the data to.
@@ -363,7 +275,7 @@ def export_to_csv(filename: str) -> None:
     return
 
 
-show_stats()
+show_stats('TechCorp')
 data = prepare_csv()
 export_to_csv('./app/data/employes_data_test.csv')
 print("Data exported to employes_data_test.csv")
