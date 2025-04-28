@@ -2,6 +2,7 @@ import json
 import csv
 from tabulate import tabulate
 
+
 def import_data() -> dict:
     """
     Import raw data from a JSON file.
@@ -12,10 +13,13 @@ def import_data() -> dict:
     Returns:
         dict: returns the data from the JSON file.
     """
-    with open('/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json') as f:
+    with open(
+        "/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json"
+    ) as f:
         data = json.load(f)
-        
+
     return data
+
 
 def get_all_items() -> list:
     """
@@ -23,20 +27,22 @@ def get_all_items() -> list:
 
     Args:
         None
-    
+
     Returns:
         list: list of all employees with their monthly salary.
     """
-    with open('/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json') as f:
+    with open(
+        "/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json"
+    ) as f:
         data = json.load(f)
     all_data = []
 
     for x in data:
         for y in data[x]:
             all_data.append(y)
-            
+
     all_data = compute_monthly_salary(all_data)
-    
+
     return all_data
 
 
@@ -50,7 +56,9 @@ def get_item_by_affiliate(affiliate: str) -> list:
     Returns:
         list: List of employees from the affiliate
     """
-    with open('/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json') as f:
+    with open(
+        "/Users/fabgrall/Documents/data_engineer/monthly_salary/employes_data_test.json"
+    ) as f:
         data = json.load(f)
 
     data = data[affiliate]
@@ -68,16 +76,20 @@ def compute_monthly_salary(data: list) -> list:
     Returns:
         dict: list of employees with their monthly salary
     """
-    
+
     for i in data:
-        if i['weekly_hours_worked'] > i['contract_hours']:
-            i['week_salary'] = i['contract_hours'] * i['hourly_rate'] + \
-                (i['weekly_hours_worked'] - i['contract_hours']) * i['hourly_rate'] * 1.5
-            i['monthly_salary'] = i['week_salary'] * 4
+        if i["weekly_hours_worked"] > i["contract_hours"]:
+            i["week_salary"] = (
+                i["contract_hours"] * i["hourly_rate"]
+                + (i["weekly_hours_worked"] - i["contract_hours"])
+                * i["hourly_rate"]
+                * 1.5
+            )
+            i["monthly_salary"] = i["week_salary"] * 4
         else:
-            i['week_salary'] = i['weekly_hours_worked'] * i['hourly_rate']
-            i['monthly_salary'] = i['week_salary'] * 4
-            
+            i["week_salary"] = i["weekly_hours_worked"] * i["hourly_rate"]
+            i["monthly_salary"] = i["week_salary"] * 4
+
     return data
 
 
@@ -96,10 +108,10 @@ def mean_salary(data: list) -> float:
     mean_sal = 0
 
     for i in data:
-        mean_sal += i['monthly_salary']
-        
+        mean_sal += i["monthly_salary"]
+
     mean_sal = mean_sal / data_length
-    
+
     return mean_sal
 
 
@@ -117,9 +129,9 @@ def lowest_salary(data: list) -> float:
     lowest_sal = mean_sal
 
     for i in data:
-        if i['monthly_salary'] < lowest_sal:
-            lowest_sal = i['monthly_salary']
-            
+        if i["monthly_salary"] < lowest_sal:
+            lowest_sal = i["monthly_salary"]
+
     return lowest_sal
 
 
@@ -133,37 +145,38 @@ def highest_salary(data: list) -> float:
     Returns:
         float: highest salary
     """
-    
+
     mean_sal = mean_salary(data)
     highest_sal = mean_sal
 
     for i in data:
-        if i['monthly_salary'] > highest_sal:
-            highest_sal = i['monthly_salary']
-            
+        if i["monthly_salary"] > highest_sal:
+            highest_sal = i["monthly_salary"]
+
     return highest_sal
 
 
 def get_global_stats() -> dict:
     """
     Get global statistics from the data.
-    
+
     Args:
         None
     Returns:
         dict: global statistics including mean, lowest, and highest salary
     """
-    
+
     data = get_all_items()
     mean_sal = mean_salary(data)
     lowest_sal = lowest_salary(data)
     highest_sal = highest_salary(data)
-    
+
     return {
-        'mean_salary': mean_sal,
-        'lowest_salary': lowest_sal,
-        'highest_salary': highest_sal
+        "mean_salary": mean_sal,
+        "lowest_salary": lowest_sal,
+        "highest_salary": highest_sal,
     }
+
 
 def get_stats(affiliate: str = None) -> dict:
     """
@@ -175,21 +188,22 @@ def get_stats(affiliate: str = None) -> dict:
     Returns:
         dict: statistics including mean, lowest, and highest salary
     """
-    
+
     if affiliate:
         data = get_item_by_affiliate(affiliate)
     else:
         data = get_all_items()
-        
+
     mean_sal = mean_salary(data)
     lowest_sal = lowest_salary(data)
     highest_sal = highest_salary(data)
-    
+
     return {
-        'mean_salary': mean_sal,
-        'lowest_salary': lowest_sal,
-        'highest_salary': highest_sal
+        "mean_salary": mean_sal,
+        "lowest_salary": lowest_sal,
+        "highest_salary": highest_sal,
     }
+
 
 def get_stats_by_affiliate(affiliate: str) -> dict:
     """
@@ -201,16 +215,16 @@ def get_stats_by_affiliate(affiliate: str) -> dict:
     Returns:
         dict: statistics for the affiliate including mean, lowest, and highest salary
     """
-    
+
     data = get_item_by_affiliate(affiliate)
     mean_sal = mean_salary(data)
     lowest_sal = lowest_salary(data)
     highest_sal = highest_salary(data)
-    
+
     return {
-        'mean_salary': mean_sal,
-        'lowest_salary': lowest_sal,
-        'highest_salary': highest_sal
+        "mean_salary": mean_sal,
+        "lowest_salary": lowest_sal,
+        "highest_salary": highest_sal,
     }
 
 
@@ -220,17 +234,19 @@ def show_stats(affiliate: str = None) -> None:
 
     Args:
         affiliate (str, optional): Affiliate None. Defaults to None.
-    
+
     Returns:
         None
     """
-    
+
     if affiliate:
         stats = get_stats_by_affiliate(affiliate)
         print(f"Statistics for {affiliate}:")
         data = get_item_by_affiliate(affiliate)
-        data = sorted(data, key=lambda x: x['monthly_salary'], reverse=True)
-        print(tabulate(data, headers="keys", tablefmt="grid"))  
+        data = sorted(data, key=lambda x: x["monthly_salary"], reverse=True)
+        
+        print(tabulate(data, headers="keys", tablefmt="grid"))
+        
         print(f"Mean Salary: {stats['mean_salary']}")
         print(f"Lowest Salary: {stats['lowest_salary']}")
         print(f"Highest Salary: {stats['highest_salary']}")
@@ -238,13 +254,14 @@ def show_stats(affiliate: str = None) -> None:
         stats = get_global_stats()
         print(f"Statistics for all affiliates:")
         data = get_all_items()
-        data = sorted(data, key=lambda x: x['monthly_salary'], reverse=True)
+        data = sorted(data, key=lambda x: x["monthly_salary"], reverse=True)
         print(tabulate(data, headers="keys", tablefmt="grid"))
         print(f"Mean Salary: {stats['mean_salary']}")
         print(f"Lowest Salary: {stats['lowest_salary']}")
         print(f"Highest Salary: {stats['highest_salary']}")
-        
+
     return
+
 
 def prepare_csv() -> dict:
     """
@@ -259,19 +276,23 @@ def prepare_csv() -> dict:
     data = import_data()
     for key, value in data.items():
         for i in value:
-            if i['weekly_hours_worked'] > i['contract_hours']:
-                i['week_salary'] = i['contract_hours'] * i['hourly_rate'] + \
-                    (i['weekly_hours_worked'] - i['contract_hours']) * i['hourly_rate'] * 1.5
-                i['monthly_salary'] = i['week_salary'] * 4
+            if i["weekly_hours_worked"] > i["contract_hours"]:
+                i["week_salary"] = (
+                    i["contract_hours"] * i["hourly_rate"]
+                    + (i["weekly_hours_worked"] - i["contract_hours"])
+                    * i["hourly_rate"]
+                    * 1.5
+                )
+                i["monthly_salary"] = i["week_salary"] * 4
             else:
-                i['week_salary'] = i['weekly_hours_worked'] * i['hourly_rate']
-                i['monthly_salary'] = i['week_salary'] * 4
-    
+                i["week_salary"] = i["weekly_hours_worked"] * i["hourly_rate"]
+                i["monthly_salary"] = i["week_salary"] * 4
+
     for i in data:
-        data[i] = sorted(data[i], key=lambda x: x['monthly_salary'], reverse=True)
-        data[i][0]['mean_salary'] = mean_salary(data[i])
-        data[i][0]['lowest_salary'] = lowest_salary(data[i])
-        data[i][0]['highest_salary'] = highest_salary(data[i])
+        data[i] = sorted(data[i], key=lambda x: x["monthly_salary"], reverse=True)
+        data[i][0]["mean_salary"] = mean_salary(data[i])
+        data[i][0]["lowest_salary"] = lowest_salary(data[i])
+        data[i][0]["highest_salary"] = highest_salary(data[i])
 
     return data
 
@@ -282,25 +303,37 @@ def export_to_csv(filename: str) -> None:
 
     Args:
         filename (str): Name of the CSV file to export the data to.
-    
+
     Returns:
         None
-        
+
     """
     data = prepare_csv()
-    with open(filename, 'w', newline='') as csvfile:
-        fieldnames = ['affiliate', 'name', 'weekly_hours_worked', 'contract_hours', 'hourly_rate', 'week_salary', 'monthly_salary', 'job', 'highest_salary', 'mean_salary', 'lowest_salary']
+    with open(filename, "w", newline="") as csvfile:
+        fieldnames = [
+            "affiliate",
+            "name",
+            "weekly_hours_worked",
+            "contract_hours",
+            "hourly_rate",
+            "week_salary",
+            "monthly_salary",
+            "job",
+            "highest_salary",
+            "mean_salary",
+            "lowest_salary",
+        ]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
         for affiliate, employees in data.items():
             for employee in employees:
-                employee['affiliate'] = affiliate
+                employee["affiliate"] = affiliate
                 writer.writerow(employee)
     return
 
 
-show_stats('TechCorp')
+show_stats()
 data = prepare_csv()
-export_to_csv('./app/data/employes_data_test.csv')
+export_to_csv("./app/data/employes_data_test.csv")
 print("Data exported to employes_data_test.csv")

@@ -28,6 +28,7 @@ with st.status("Generating data..."):
                 "name": fake.first_name(),
                 "last_name":  fake.last_name(),
                 "job": fake.job(),
+                "salary": fake.random_int(3000, 13000),
                 "monthly_salary": np.random.randint(3000, 13000),
                 "weekly_hours_worked": np.random.randint(20, 50),
                 "contract_hours": np.random.randint(20, 50),
