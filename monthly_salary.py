@@ -337,3 +337,22 @@ show_stats()
 data = prepare_csv()
 export_to_csv("./app/data/employes_data_test.csv")
 print("Data exported to employes_data_test.csv")
+
+
+from datetime import datetime
+for i in data:
+    for j in data[i]:
+        j["date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        j["affiliate"] = i
+        j["weekly_hours_worked"] = 40
+        j["contract_hours"] = 35
+        j["hourly_rate"] = 20
+        j["job"] = "developer"
+        j["name"] = "John Doe"
+        j["week_salary"] = (
+            j["contract_hours"] * j["hourly_rate"]
+            + (j["weekly_hours_worked"] - j["contract_hours"])
+            * j["hourly_rate"]
+            * 1.5
+        )
+print(j)
